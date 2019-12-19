@@ -37,11 +37,11 @@ In the list of leagues available every user that have teams can join any league 
 
 User can Log-In, Log-Out, Register, Find Leagues, Join a League, Accept Requests, Decline Requests and Check Results. 
 
-![Use Cases](usecasesfinal.png)
+![Use Cases](time2padel-doc/usecasesfinal.png)
 
 ## Flow
 
-![Flow](finalflow.png)
+![Flow](time2padel-doc/finalflow.png)
 
 ## Technical Description
 
@@ -73,16 +73,16 @@ List of the components used in the project:
     
 ### Blocks
 
-![Blocks](Blocks.png)
+![Blocks](time2padel-doc/Blocks.png)
 
 ### Data Model 
 
-![Data Model](datamodel.png)
+![Data Model](time2padel-doc/datamodel.png)
 
 ## Test coverage
 ![Coverage report](https://img.shields.io/badge/Coverage-95.05%25-green.svg)
 
-![Test coverage](picture-testcoverageAPI.png)
+![Test coverage](time2padel-doc/picture-testcoverageAPI.png)
 
 ## TODO's
 
