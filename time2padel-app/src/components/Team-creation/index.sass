@@ -1,0 +1,91 @@
+.team-creation
+    display: flex
+    flex-direction: row
+    justify-content: center
+    width: 100%
+    height: 100%
+
+    .container
+        position: fixed
+        top: 14%
+        width: 85%
+        border: black solid 2px
+        border-radius: 2rem
+        background-color: #ece9e9
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+
+        &__title
+            display: flex
+            justify-content: center
+            width: 100%
+            font-size: 150%
+            font-family: 'Staatliches'
+            color: black
+            margin-top: 4%
+
+        .players-info
+            margin-top: 5%
+            .box
+                display: flex
+                flex-direction: column
+                flex-wrap: wrap
+                justify-content: space-between
+                padding: 1%
+                align-items: center
+                width: 100%
+                &__title
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                &__form1
+                    display: flex
+                    flex-direction: column
+                    align-content: center
+                    & label
+                        margin: 5%
+
+                &__form2
+                    display: flex
+                    flex-direction: column
+                    align-content: center
+                    justify-content: space-around
+                    margin-top: 5%
+                    margin-bottom: 5%
+                    & label
+                        margin: 5%
+                & span
+                    margin-bottom: 8%
+                    margin-top: -5%
+                    font-size: 65%
+                    width: 63%
+                &__teamtitle
+                    display: flex
+                    flex-direction: column
+                    align-content: center
+                    justify-content: space-around
+                    margin-bottom: 10%
+                    & label
+                        margin-top: 5%
+                .buttons
+                    display: flex
+                    flex-direction: row
+                    align-content: center
+                    justify-content: space-around
+                    height: 6vh
+                    width: 90%
+                    margin-bottom: 5%
+                    margin-top: 3%
+                    &__confirm
+                        width: 5rem
+                        height: 2rem
+                        border-radius: .2rem
+                        background-color: #cdf1cc
+                    &__cancel
+                        width: 5rem
+                        height: 2rem
+                        border-radius: .2rem
+                        background-color: #f88181

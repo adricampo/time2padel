@@ -1,0 +1,909 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100vw;
+  padding: 0.5%;
+  background-color: white;
+  color: black;
+  border-bottom: solid 2px black;
+}
+.header__logo {
+  height: 100%;
+  max-width: 30vw;
+}
+.header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.header__hamburguer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 20%;
+  align-items: center;
+}
+.header__nav {
+  display: none;
+}
+.header #show-menu:checked ~ .menu {
+  display: flex;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  width: 30%;
+  background-color: white;
+  cursor: pointer;
+}
+.header #show-menu:checked ~ .menu .list {
+  display: flex;
+  flex-direction: column;
+  top: 10vh;
+  height: 25vh;
+  justify-content: flex-start;
+  list-style: none;
+  cursor: pointer;
+}
+.header #show-menu:checked ~ .menu .list .list__item {
+  padding: 0.7rem;
+  align-items: center;
+}
+
+.menu {
+  flex-direction: column;
+  justify-content: space-around;
+  border-left: solid 1px;
+  border-bottom: solid 1px;
+}
+.menu .list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+  font-size: 100%;
+  margin-left: 1%;
+  margin-right: 1%;
+  cursor: pointer;
+}
+
+.welcome__title {
+  margin-top: 10%;
+  margin-left: 12%;
+  font-size: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.news .new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 45%;
+}
+.news .new__title {
+  font-family: "Staatliches";
+  font-size: 120%;
+}
+.news .new__img {
+  max-width: 75%;
+  height: 10vh;
+}
+.news .new__text {
+  font-size: 75%;
+}
+
+.speech {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.speech__title {
+  text-align: center;
+  font-family: "Staatliches";
+  font-size: 130%;
+}
+.speech__description {
+  text-align: center;
+  font-size: 70%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 113vh;
+}
+.main__welcome {
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  height: 30%;
+  color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/main1.jpg");
+  background-size: 130%;
+}
+.main__news {
+  position: absolute;
+  top: 42vh;
+  width: 100%;
+  height: 40%;
+  background-color: #e2dfdf;
+}
+.main__speech {
+  position: absolute;
+  top: 84vh;
+  width: 100%;
+  height: 17%;
+  background-color: #e2dfdf;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 5rem;
+  background-color: #e2dfdf;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+  border-top: solid black 1px;
+}
+.footer .footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.footer .footer-menu__about-us {
+  font-size: 70%;
+}
+.footer .footer-menu__privacy {
+  font-size: 70%;
+}
+.footer .footer-menu__contact-us {
+  font-size: 70%;
+}
+.footer .footer-menu__conditions {
+  font-size: 70%;
+}
+.footer .others {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.footer .others__copyright {
+  font-size: 70%;
+  width: 60%;
+}
+.footer .others .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  width: 30%;
+}
+.footer .others .social-media a {
+  color: black;
+}
+.footer .others .social-media__media-icon {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: flex-start;
+  font-size: 6rem;
+  margin: 0 10rem 0 10rem;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #eee29e;
+}
+.landing .container {
+  position: fixed;
+  top: 35%;
+  z-index: 100;
+  width: 65%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: black solid 2px;
+  border-radius: 2rem;
+  background-color: #ece9e9;
+  padding: 2rem;
+  cursor: pointer;
+}
+.landing .container__title {
+  font-size: 185%;
+}
+.landing .container .images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.landing .container .images__img1 {
+  max-width: 35vw;
+  width: 70%;
+  margin-left: -20%;
+}
+.landing .container .images__img2 {
+  max-width: 7vw;
+  margin-bottom: -2rem;
+  width: 30%;
+}
+.landing .container .images::hover {
+  color: tomato;
+}
+
+.sign-in {
+  width: 100vw;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2%;
+  align-items: center;
+}
+.sign-in__form {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  align-items: center;
+}
+.sign-in__form label, .sign-in__form button {
+  margin: 2%;
+}
+.sign-in__form label {
+  width: 100%;
+}
+
+.sign-up {
+  width: 100vw;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2%;
+  align-items: center;
+}
+.sign-up__text {
+  color: black;
+  width: 95%;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 70%;
+}
+.sign-up__form {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  align-items: center;
+}
+.sign-up__form label, .sign-up__form button {
+  margin: 2%;
+}
+.sign-up__form label {
+  width: 100%;
+}
+
+.registration-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #eee29e;
+}
+.registration-page .container {
+  position: fixed;
+  top: 18%;
+  width: 80%;
+  min-height: 70%;
+  border: black solid 2px;
+  background-color: #ece9e9;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.registration-page .container__title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 130%;
+  padding-bottom: 2%;
+  font-family: "Staatliches";
+  color: black;
+}
+
+.leagues {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 130vh;
+  position: absolute;
+  top: 12vh;
+}
+.leagues .list {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leagues .list .container {
+  width: 100%;
+  height: 15%;
+}
+.leagues .list .container__img {
+  width: 15%;
+}
+.leagues .list .container__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+.leagues .list .container p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+}
+.leagues .list .container .buttons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  height: 4vh;
+  width: 100%;
+}
+.leagues .list .container .buttons__deleteleague {
+  width: 7rem;
+  heigth: 5rem;
+  border-radius: 0.2rem;
+  background-color: #f88181;
+}
+.leagues .list .container .buttons__addteamtoleague {
+  width: 7rem;
+  heigth: 5rem;
+  border-radius: 0.2rem;
+  background-color: #cdf1cc;
+}
+.leagues .create-league {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  height: 4vh;
+  width: 87%;
+  margin-top: 10%;
+}
+.leagues .create-league__button {
+  width: 7rem;
+  heigth: 5rem;
+  border-radius: 0.2rem;
+  background-color: #cdf1cc;
+}
+.leagues .back-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  height: 4vh;
+  width: 87%;
+  margin-top: 5%;
+}
+.leagues .back-button__button {
+  width: 7rem;
+  heigth: 5rem;
+  border-radius: 0.2rem;
+  background-color: #f88181;
+}
+
+.team-creation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fae885;
+}
+.team-creation .container {
+  position: fixed;
+  top: 12%;
+  width: 85%;
+  min-height: 80vh;
+  border: black solid 2px;
+  border-radius: 2rem;
+  background-color: #ece9e9;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.team-creation .container__title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 150%;
+  font-family: "Staatliches";
+  color: black;
+}
+.team-creation .container .players-info {
+  margin-top: -10%;
+}
+.team-creation .container .players-info__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.team-creation .container .players-info__form1 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.team-creation .container .players-info__form1 label {
+  margin: 5%;
+}
+.team-creation .container .players-info__form2 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+.team-creation .container .players-info__form2 label {
+  margin: 5%;
+}
+.team-creation .container .players-info__teamtitle {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+.team-creation .container .players-info__teamtitle label {
+  margin: 5%;
+}
+.team-creation .container .buttons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  height: 6vh;
+  width: 65%;
+}
+.team-creation .container .buttons__confirm {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  background-color: #cdf1cc;
+}
+.team-creation .container .buttons__cancel {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  background-color: #f88181;
+}
+
+.message {
+  margin: 5%;
+  font-size: 65%;
+  width: 100%;
+}
+
+.myteams {
+  position: absolute;
+  top: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.myteams .box {
+  width: 90%;
+  height: 8rem;
+}
+.myteams .box .info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: solid red 2px;
+  background-color: #ebe7e7;
+  margin-bottom: 3%;
+}
+.myteams .box .info__message {
+  font-size: 95%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.myteams .box .info__teamtitle {
+  font-size: 120%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.myteams .box .info .buttons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  height: 4vh;
+  width: 65%;
+}
+.myteams .box .info .buttons__confirm {
+  width: 5rem;
+  heigth: 5rem;
+  border-radius: 0.2rem;
+  background-color: #cdf1cc;
+}
+.myteams .box .info .buttons__cancel {
+  width: 5rem;
+  heigth: 5rem;
+  border-radius: 0.2rem;
+  background-color: #f88181;
+}
+.myteams .box .infoifaccepted {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid red 2px;
+  background-color: #ebe7e7;
+  margin-bottom: 3%;
+}
+.myteams .box .infoifaccepted__teamtitle {
+  font-size: 120%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.myteams .box .infoifaccepted__teaminfo {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.myteams .box .infoifaccepted .buttons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  height: 4vh;
+  width: 65%;
+}
+.myteams .box .infoifaccepted .buttons__delete {
+  width: 7rem;
+  heigth: 5rem;
+  border-radius: 0.2rem;
+  background-color: #f88181;
+}
+.myteams .create-team {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  height: 4vh;
+  width: 100%;
+  margin-top: 5%;
+}
+.myteams .create-team__button {
+  width: 7rem;
+  heigth: 5rem;
+  border-radius: 0.2rem;
+  background-color: #cdf1cc;
+}
+.myteams .back-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  height: 4vh;
+  width: 100%;
+  margin-top: 5%;
+}
+.myteams .back-button__button {
+  width: 7rem;
+  heigth: 5rem;
+  border-radius: 0.2rem;
+  background-color: #f88181;
+}
+
+.league-detail {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 180vh;
+  position: absolute;
+  top: 12vh;
+}
+.league-detail .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+}
+.league-detail .container__league-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.league-detail .container .teams {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.league-detail .container .teams li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 6%;
+}
+.league-detail .container .league-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.league-detail .container .container-playingday {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40vh;
+}
+.league-detail .container .container-playingday__title {
+  margin-left: 5%;
+}
+.league-detail .container .container-playingday .match {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.league-detail .back-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  height: 6vh;
+  width: 90%;
+  margin-top: 5%;
+}
+.league-detail .back-button__button {
+  width: 7rem;
+  heigth: 5rem;
+  border-radius: 0.2rem;
+  background-color: #f88181;
+}
+
+.league-creation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fae885;
+}
+.league-creation .container {
+  position: fixed;
+  top: 12%;
+  width: 80%;
+  padding: 3%;
+  min-height: 80vh;
+  border: black solid 2px;
+  border-radius: 2rem;
+  background-color: #ece9e9;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.league-creation .container__title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 150%;
+  font-family: "Staatliches";
+  color: black;
+}
+.league-creation .container .league-info {
+  margin-top: -25%;
+}
+.league-creation .container .league-info__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.league-creation .container .league-info__form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.league-creation .container .league-info__form label {
+  margin-top: 10%;
+}
+.league-creation .container .buttons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  height: 6vh;
+  width: 65%;
+}
+.league-creation .container .buttons__confirm {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  background-color: #cdf1cc;
+}
+.league-creation .container .buttons__cancel {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  background-color: #f88181;
+}
+
+.message {
+  margin: 5%;
+  font-size: 65%;
+  width: 100%;
+}
+
+.userpage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.userpage .container {
+  position: fixed;
+  top: 14%;
+  width: 80%;
+  min-height: 70%;
+  border: black solid 2px;
+  background-color: #ece9e9;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.userpage .container__title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 130%;
+  padding-bottom: 2%;
+  font-family: "Staatliches";
+  color: black;
+}
+.userpage .container__form {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  align-items: center;
+}
+.userpage .container label, .userpage .container button {
+  margin: 6%;
+}
+.userpage .container label {
+  width: 100%;
+}
+.userpage .container .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 85%;
+  height: 4rem;
+}
+.userpage .container .buttons .delete-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 7vh;
+  width: 95%;
+}
+.userpage .container .buttons .delete-user__button {
+  width: 7rem;
+  height: 5rem;
+  border-radius: 0.2rem;
+  background-color: #cdf1cc;
+}
+.userpage .container .buttons .modify-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 7vh;
+  width: 87%;
+}
+.userpage .container .buttons .modify-info__button {
+  width: 7rem;
+  height: 5rem;
+  border-radius: 0.2rem;
+  background-color: #f88181;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Big Shoulders Text";
+  letter-spacing: 0.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#show-menu {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 1rem;
+}
+.icon__text {
+  font-size: 0.8rem;
+}
+
+/*# sourceMappingURL=index.css.map */

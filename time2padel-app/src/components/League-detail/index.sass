@@ -1,0 +1,58 @@
+.league-detail
+    display: flex
+    flex-direction: column
+    width: 100vw
+    position: absolute
+    top: 12vh
+    height: 325%
+
+    .container
+        display: flex
+        flex-direction: column
+        width: 100%
+        height: 90%
+        &__league-info
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            border-bottom: 1px solid
+            width: 86%
+            margin-left: 5%
+            font-family: 'Staatliches'
+        .teams
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            li
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                justify-content: space-evenly
+                margin-top: 6%
+        .league-status
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            margin-left: 9%
+            margin-top: 8%
+            margin-bottom: 8%
+            &__start-date
+                border: 1px solid
+                padding: 3%
+                background-color: #cdf1cc
+
+
+        .back-button
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            align-content: center
+            width: 90%
+            margin-top: 5%
+            &__button
+                width: 7rem
+                height: 2rem
+                border-radius: .2rem
+                background-color: #f88181
+                font-family: 'Big Shoulders Text'
+                letter-spacing: .1rem

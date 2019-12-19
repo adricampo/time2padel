@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time2Padel</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Staatliches&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80c46885ed.js"></script>
+</head>
+
+<body>
+    <!-- Component: HEADER -->
+    <header class="header">
+        <img class="header__logo" src="img/logoPro1.png">
+        <h1 class="header__title">Time2Padel</h1>
+        <input type="checkbox" id="show-menu">
+        <label class="header__hamburguer" for="show-menu"><i class="fas fa-bars"></i></label>
+        <nav class="header__nav menu">
+            <ul class="menu__list list">
+                <li><a href="#" class="list__item">My Teams</a></li>
+                <li><a href="#" class="list__item">User Info</a></li>
+                <li><a href="#" class="list__item">Leagues</a></li>
+                <li><a href="#" class="list__item">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Component: FOOTER -->
+    <footer class="footer">
+        <div class="footer__footer-menu footer-menu">
+            <div class="footer-menu__about-us">About Us</div>
+            <div class="footer-menu__privacy">Privacy Policy</div>
+            <div class="footer-menu__contact-us">Contact us</div>
+            <div class="footer-menu__conditions">Conditions</div>
+        </div>
+        <div class="footer__others others">
+            <div class="others__copyright"> adricampo productions ©2019 </div>
+            <ul class="others__social-media social-media">
+                <li className="social-media__media-icon">
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li className="social-media__media-icon">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li className="social-media__media-icon">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li className="social-media__media-icon">
+                    <a href="#"><i class="fab fa-youtube-square"></i></a>
+                </li>
+                <li className="social-media__media-icon">
+                    <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Wireframe 1 -->
+    <section class="landing hidden">
+        <article class="landing__container container">
+            <h2 class="container__title">Time2Padel</h2>
+            <div class="container__images images">
+                <img class="images__img1" src="img/logoPro1.png">
+                <img class="images__img2" src="img/logoPro2.png">
+            </div>
+        </article>
+    </section>
+    <!-- Wireframe 2 -->
+    <section class="registration-page hidden">
+        <div class="registration-page__container container">
+            <section class="container__sign-in sign-in">
+                <h2 class="container__title">Sign In</h2>
+                <form class="sign-in__form">
+                    <label for="username">Username: <input type="email" class="sign-in__name" name="username"></label>
+                    <label for="password">Password: <input type="password" class="sign-in__name"
+                            name="password"></label>
+                    <a href="#" class="link">Forgot your password?</a>
+                    <button class="sign-in__button">Sign In</button>
+                </form>
+            </section>
+            <section class="container__sign-up sign-up">
+                <h2 class="container__title">Create a new account</h2>
+                <p class="sign-up__text">Register and create an account to be part of our Padel Fam!</p>
+                <form class="sign-up__form">
+                    <label for="name">Name: <input type="text" class="sign-up__name" name="name"></label>
+                    <label for="surname">Surname: <input type="text" class="sign-up__name" name="surname"></label>
+                    <label for="username">Username: <input type="email" class="sign-up__name" name="username"></label>
+                    <label for="gender">Gender: <input type="radio" class="sign-up__name" name="gender" value="Male"> Male<input type="radio" class="sign-up__name" name="gender" value="Female"> Female</label>
+                    <label for="email">Email: <input type="email" class="sign-up__name" name="email"></label>
+                    <label for="password">Password: <input type="password" class="sign-up__name" name="password"></label>
+                    <button class="sign-up__button">Sign Up</button>
+                </form>
+            </section>
+        </div>
+    </section>
+    <!-- Wireframe 3  -->
+
+    <!-- Aquí va un HEADER -->
+
+    <main class="main hidden">
+        <section class="main__welcome welcome">
+            <h2 class="welcome__title">Welcome</h2>
+        </section>
+        <section class="main__news news">
+            <article class="news__new new">
+                <h2 class="new__title">New 1</h2>
+                <img class="new__img" src="img/main2.jpeg">
+                <p class="new__text">Description</p>
+            </article>
+            <article class="news__new new">
+                <h2 class="new__title">New 2</h2>
+                <img class="new__img" src="img/main3.jpeg">
+                <p class="new__text">Description</p>
+            </article>
+            <article class="news__new new">
+                <h2 class="new__title">New 3</h2>
+                <img class="new__img" src="img/main4.jpeg">
+                <p class="new__text">Description</p>
+            </article>
+            <article class="news__new new">
+                <h2 class="new__title">New 4</h2>
+                <img class="new__img" src="img/padel-balls.jpg">
+                <p class="new__text">Description</p>
+            </article>
+        </section>
+        <section class="main__speech speech">
+            <div class="speech__title">Find here all the info you need</div>
+            <div class="speech__description">Keep informed of the news, check your results, join our leagues and more!
+            </div>
+        </section>
+    </main>
+
+    <!-- Aquí va un FOOTER -->
+
+    <!-- Wireframe 4 -->
+
+    <!-- Aquí va un HEADER -->
+
+    <main class="leagues hidden">
+        <ul class="leagues__list list">
+            <div class="list__container container">
+                <li><a href="#" class="container__item"><img class="container__img" src="img/logoPro2.png"><p>Level B - Masc - W: 20:00h</p></a>
+                    <div class="container__buttons buttons">
+                        <button class="buttons__addteamtoleague">Add Team</button>
+                        <button class="buttons__deleteleague">Delete League</button>
+                    </div>
+                </li>
+            </div>
+            <div class="list__container container">
+                <li><a href="#" class="container__item"><img class="container__img" src="img/logoPro2.png"><p>Level C+ - Fem - M: 19:00h</p></a>
+                    <div class="container__buttons buttons">
+                        <button class="buttons__addteamtoleague">Add Team</button>
+                        <button class="buttons__deleteleague">Delete League</button>
+                    </div>
+                </li>
+            </div>
+            <div class="list__container container">
+                <li><a href="#" class="container__item"><img class="container__img" src="img/logoPro2.png"><p>Level B+ - Masc - Tu: 18:00h</p></a>
+                    <div class="container__buttons buttons">
+                        <button class="buttons__addteamtoleague">Add Team</button>
+                        <button class="buttons__deleteleague">Delete League</button>
+                    </div>
+                </li>
+            </div>
+            <div class="list__container container">
+                <li><a href="#" class="container__item"><img class="container__img" src="img/logoPro2.png"><p>Level D - Mix - F: 20:00h</p></a>
+                    <div class="container__buttons buttons">
+                        <button class="buttons__addteamtoleague">Add Team</button>
+                        <button class="buttons__deleteleague">Delete League</button>
+                    </div>
+                </li>
+            </div>
+            <div class="list__container container">
+                <li><a href="#" class="container__item"><img class="container__img" src="img/logoPro2.png"><p>Level B+ - Fem - F: 21:00h</p></a>
+                    <div class="container__buttons buttons">
+                        <button class="buttons__addteamtoleague">Add Team</button>
+                        <button class="buttons__deleteleague">Delete League</button>
+                    </div>
+                </li>
+            </div>
+        </ul>
+        <div class="leagues__create-league create-league">
+            <button class="create-league__button">Create League</button>
+        </div>
+        <div class="leagues__back-button back-button">
+            <button class="back-button__button">Go Back</button>
+        </div>
+    </main>
+
+    <!-- Aquí va un FOOTER -->
+
+    <!-- Wireframe 5 -->
+
+    <!-- Aquí va un HEADER -->
+
+    <section class="league-detail">
+            <div class="league-detail__container container">
+                <h3 class="container__league-info league-info">
+                    <p class="league-info__level">B+ </p><p class="league-info__gender">Male </p><p class="league-info__date">Tuesday </p><p class="league-info__time">20:30h </p>
+                </h3>
+                    <ul class="container__teams teams">
+                        <li>TEAM 1<p>Player1</p><p>Player2</p></li>
+                        <li>TEAM 2<p>Player1</p><p>Player2</p></li>
+                        <li>TEAM 3<p>Player1</p><p>Player2</p></li>
+                        <li>TEAM 4<p>Player1</p><p>Player2</p></li>
+                        <li>TEAM 5<p>Player1</p><p>Player2</p></li>
+                        <li>TEAM 6<p>Player1</p><p>Player2</p></li>
+                    </ul>
+                <div class="container__status league-status">                
+                    <p class="league-status__status">AVAILABLE or COMPLETED</p>
+                    <p class="league-status__start-date">15/12/2019</p>
+                </div>
+
+                <div class="container__playingday container-playingday">
+                    <h2 class="container-playingday__title">Playing Day 1</h2>
+                    <div class="container-playingday__match match">
+                        <p class="match__match-number">Match 1</p><p class="match__team">Team1</p><p class="match__team">Team2</p><p class="match__team">Result</p>
+                    </div>
+                    <div class="container-playingday__match match">
+                        <p class="match__match-number">Match 2</p><p class="match__team">Team3</p><p class="match__team">Team4</p><p class="match__team">Result</p>
+                    </div>
+                    <div class="container-playingday__match match">
+                        <p class="match__match-number">Match 3</p><p class="match__team">Team5</p><p class="match__team">Team6</p><p class="match__team">Result</p>
+                    </div>
+                </div>
+                <div class="container__playingday container-playingday">
+                        <h2 class="container-playingday__title">Playing Day 2</h2>
+                        <div class="container-playingday__match match">
+                            <p class="match__match-number">Match 1</p><p class="match__team">Team1</p><p class="match__team">Team5</p><p class="match__team">Result</p>
+                        </div>
+                        <div class="container-playingday__match match">
+                            <p class="match__match-number">Match 2</p><p class="match__team">Team2</p><p class="match__team">Team3</p><p class="match__team">Result</p>
+                        </div>
+                        <div class="container-playingday__match match">
+                            <p class="match__match-number">Match 3</p><p class="match__team">Team4</p><p class="match__team">Team6</p><p class="match__team">Result</p>
+                        </div>
+                    </div>
+                
+
+                <div class="league-detail__back-button back-button">
+                    <button class="back-button__button">Go Back</button>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Aquí va un FOOTER -->
+
+    <!-- Wireframe 6 -->
+    <section class="league-creation hidden">
+            <div class="league-creation__container container">
+                <h2 class="container__title">League Creation</h2>
+                <section class="container__league-info league-info">
+                    <form class="league-info__form">
+                        <label for="level">Level: 
+                            <input type="radio" class="league-info__name" name="level" value="D"> D
+                            <input type="radio" class="league-info__name" name="level" value="C-"> C-
+                            <input type="radio" class="league-info__name" name="level" value="C+"> C+
+                            <input type="radio" class="league-info__name" name="level" value="B-"> B-
+                            <input type="radio" class="league-info__name" name="level" value="B+"> B+
+                            <input type="radio" class="league-info__name" name="level" value="A"> A
+                        </label>
+                        <label for="gender">Gender: <input type="radio" class="league-info__name" name="gender" value="Male"> Male<input type="radio" class="sign-up__name" name="gender" value="Female"> Female</label>
+                        <label for="date">Date: 
+                                <input type="radio" class="league-info__name" name="date" value="Monday">Monday
+                                <input type="radio" class="league-info__name" name="date" value="Tuesday">Tuesday
+                                <input type="radio" class="league-info__name" name="date" value="Wednesday">Wednesday
+                                <input type="radio" class="league-info__name" name="date" value="Thursday">Thursday
+                                <input type="radio" class="league-info__name" name="date" value="Friday">Friday
+                        </label>   
+                        <label for="time">Time: 
+                            <input type="radio" class="league-info__name" name="time" value="18:00h">18:00h
+                            <input type="radio" class="league-info__name" name="time" value="18:30h">18:30h
+                            <input type="radio" class="league-info__name" name="time" value="19:00h">19:00h
+                            <input type="radio" class="league-info__name" name="time" value="19:30h">19:30h
+                            <input type="radio" class="league-info__name" name="time" value="20:00h">20:00h
+                            <input type="radio" class="league-info__name" name="time" value="20:30h">20:30h
+                            <input type="radio" class="league-info__name" name="time" value="21:00h">21:00h
+                            <input type="radio" class="league-info__name" name="time" value="21:30h">21:30h
+                        </label>
+                        
+                    </form>
+                </section>
+                <div class="container__buttons buttons">
+                    <button class="buttons__confirm">Confirm</button>
+                    <button class="buttons__cancel">Cancel</button>
+                </div>
+            </div>
+        </section>
+
+
+
+    <!-- Wireframe 7 -->
+
+    <!-- Aquí va un HEADER -->
+
+    <section class="myteams hidden">
+        <div class="myteams__box box">
+            <div class="box__info info">
+                <p class="info__message">You received an invitation from HONGDA. Do you want to join the team? 🎾🎾</p>
+                <a href="#" class="info__teamtitle">skylab3000</a>
+                <div class="info__buttons buttons">
+                    <button class="buttons__confirm">Confirm</button>
+                    <button class="buttons__cancel">Cancel</button>
+                </div>
+            </div>
+            <div class="box__info info">
+                <p class="info__message">You received an invitation from XAVIER. Do you want to join the team? 🎾🎾</p>
+                <a href="#" class="info__teamtitle">padelmasters</a>
+                <div class="info__buttons buttons">
+                    <button class="buttons__confirm">Confirm</button>
+                    <button class="buttons__cancel">Cancel</button>
+                </div>
+            </div>
+            <div class="box__infoifaccepted infoifaccepted">
+                <h3 class="infoifaccepted__teamtitle">padelmafia</h3>
+                <div class="infoifaccepted__teaminfo teaminfo">                
+                    <p class="teaminfo__player1">player1</p><p class="teaminfo__player2">player2</p>
+                    <p class="teaminfo__wins">W: 5</p><p class="teaminfo__loses">L: 0</p> 
+                </div>
+                <div class="infoifaccepted__buttons buttons">
+                    <button class="buttons__delete">Delete Team</button>
+                </div>
+            </div>
+            <div class="myteams__create-team create-team">
+                <button class="create-team__button">Create Team</button>
+            </div>
+            <div class="requests__back-button back-button">
+                <button class="back-button__button">Go Back</button>
+            </div>
+        </div>
+</section>
+
+    <!-- Aquí va un FOOTER -->
+
+    <!-- Wireframe 8 -->
+    <section class="team-creation hidden">
+        <div class="team-creation__container container">
+            <h2 class="container__title">Team Creation</h2>
+            <section class="container__players-info players-info">
+                <h3 class="players-info__title">Player1</h3>
+                <form class="players-info__form1">
+                    <label for="username">Username: <input type="email" class="players-info_name" name="username"></label>
+                    <label for="password">Password: <input type="password" class="players-info__name" name="password"></label>
+                </form>
+                <h3 class="players-info__title">Player2</h3>
+                <form class="players-info__form2">
+                    <label for="username">Username: <input type="email" class="players-info_name" name="username"></label>
+                    <span class="message">A request will be sent to this user</span>
+                </form>
+                <h3 class="players-info__title">Team Title</h3>
+                <form class="players-info__teamtitle">
+                    <label for="name">Name: <input type="name" class="players-info_name" name="name"></label>
+                </form>
+                
+            </section>
+            <div class="container__buttons buttons">
+                <button class="buttons__confirm">Confirm</button>
+                <button class="buttons__cancel">Cancel</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wireframe 9 -->
+    <section class="userpage hidden">
+        <div class="userpage__container container">
+            <h3 class="container__title">Personal Info</h3>
+            <form class="container__form">
+                <label for="name">Name: <input type="text" class="sign-up__name" name="name" value="adri" disabled></label>
+                <label for="surname">Surname: <input type="text" class="sign-up__name" name="surname" value="campo" disabled></label>
+                <label for="username">Username: <input type="text" class="sign-up__name" name="username"></label>
+                <label for="gender">Gender: <input type="text" class="sign-up__name" name="gender" value="Male" disabled></label>
+                <label for="email">Email: <input type="email" class="sign-up__name" name="email" value="adri" disabled></label>
+                <label for="password">Password: <input type="password" class="sign-up__name" name="password" disabled></label> 
+            </form>
+            <div class="container__buttons buttons">
+                <div class="buttons__delete-user delete-user">
+                    <button class="delete-user__button">Delete account</button>
+                </div>
+                <div class="buttons__modify-info modify-info">
+                    <button class="modify-info__button">Modify personal info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

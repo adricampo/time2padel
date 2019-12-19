@@ -1,0 +1,118 @@
+@import menu
+
+.header
+    position: fixed
+    top: 0
+    z-index: 10
+    display: flex
+    justify-content: space-around
+    height: 10vh
+    width: 100vw
+    padding: .5%
+    background-color: white
+    color: black
+    border-bottom: solid 2px black
+    &__logo
+        height: 100%
+        max-width: 30vw
+    &__title
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 40%
+    &__welcome
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 40%
+        margin-left: 5%
+        font-family: 'Staatliches'
+    &__hamburguer
+        display: flex
+        flex-direction: column
+        justify-content: center
+        cursor: pointer
+        width: 20%
+        align-items: center
+
+    &__nav
+        display: none
+        z-index: 10
+
+    #show-menu
+        display: none
+    .hamburger__icon
+        display: flex
+        align-items: center
+        margin-top: .5rem
+    &:hover
+        cursor: pointer
+    .nav
+        display: none
+        z-index: 10
+
+    .nav-show
+        display: flex
+        position: absolute
+        top: 10vh
+        right: 0
+        width: 7rem
+        background-color: white
+        cursor: pointer
+        color: black
+        & .menu
+            display: flex
+            flex-direction: column
+            height: calc(100vh - 60px)
+            justify-content: space-between
+            list-style: none
+
+            & .menu__item
+                padding: 1rem
+                &.access
+                    text-align: center
+                    font-size: 1rem
+                    background-color: #f8ddb9
+                    padding-bottom: 2rem
+                form
+                    & .btn__logout
+                        padding: 0
+                        font-size: 20px
+    .nav
+        width: 100%
+
+.list
+    display: flex
+    flex-direction: column
+    top: 12vh
+    height: 27vh
+    width: 100%
+    justify-content: space-evenly
+    align-items: center
+    list-style: none
+    cursor: pointer
+    border-left: 1px solid
+    border-bottom: 1px solid
+    font-family: 'Staatliches'
+    a
+        color: black
+
+    // #show-menu:checked ~ .menu
+    //     display: flex
+    //     position: absolute
+    //     top: 10vh
+    //     right: 0
+    //     width: 30%
+    //     background-color: white
+    //     cursor: pointer
+    // #show-menu:checked ~ .menu .list
+    //     display: flex
+    //     flex-direction: column
+    //     top: 10vh
+    //     height: 32vh
+    //     justify-content: flex-start
+    //     list-style: none
+    //     cursor: pointer
+    // #show-menu:checked ~ .menu .list .list__item
+    //     padding: .7rem
+    //     align-items: center
