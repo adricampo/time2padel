@@ -20,7 +20,7 @@ import retrieveUserTeams from './retrieve-userteams'
 // import listTeams from './list-teams'
 
 
-export default {
+export {
     authenticateUser,
     registerUser,
     retrieveUser,
