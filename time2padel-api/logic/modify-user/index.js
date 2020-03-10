@@ -10,7 +10,7 @@ const bcrypt = require('bcryptjs')
  * @param {string} password, user password
  */
 
-module.exports = function (id, username, password) {
+export default function (id, username, password) {
     validate.string(id)
     validate.string.notVoid('id', id)
     if (!ObjectId.isValid(id)) throw new ContentError(`${id} is not a valid id`)

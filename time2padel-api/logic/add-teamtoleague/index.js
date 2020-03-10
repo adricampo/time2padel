@@ -11,7 +11,7 @@ const robin = require('../../helpers/round-robin');
  * @param {string} teamId, the id of the team 
  */
 
-module.exports = function (leagueId, teamId) {
+export default function (leagueId, teamId) {
     validate.string(leagueId)
     validate.string.notVoid('leagueId', leagueId)
 

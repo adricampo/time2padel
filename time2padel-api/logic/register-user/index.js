@@ -13,7 +13,7 @@ const bcrypt = require('bcryptjs')
  * @param {string} gender, user gender 
  */
 
-module.exports = function (name, surname, email, username, password, gender) {
+export default function (name, surname, email, username, password, gender) {
     validate.string(name)
     validate.string.notVoid('name', name)
     validate.string(surname)
