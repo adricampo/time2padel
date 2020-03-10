@@ -27,6 +27,12 @@
         width: 40%
         margin-left: 5%
         font-family: 'Staatliches'
+        @media only screen and (min-width: 1024px)
+            width: 80%
+            display: flex
+            align-items: start
+            font-size: 150%
+
     &__hamburguer
         display: flex
         flex-direction: column
@@ -34,7 +40,8 @@
         cursor: pointer
         width: 20%
         align-items: center
-
+        @media only screen and (min-width: 1024px)
+            width: 30%
     &__nav
         display: none
         z-index: 10
@@ -60,6 +67,9 @@
         background-color: white
         cursor: pointer
         color: black
+        @media only screen and (min-width: 1024px)
+            width: 20vw
+            height: 27vh    
         & .menu
             display: flex
             flex-direction: column
@@ -96,23 +106,3 @@
     font-family: 'Staatliches'
     a
         color: black
-
-    // #show-menu:checked ~ .menu
-    //     display: flex
-    //     position: absolute
-    //     top: 10vh
-    //     right: 0
-    //     width: 30%
-    //     background-color: white
-    //     cursor: pointer
-    // #show-menu:checked ~ .menu .list
-    //     display: flex
-    //     flex-direction: column
-    //     top: 10vh
-    //     height: 32vh
-    //     justify-content: flex-start
-    //     list-style: none
-    //     cursor: pointer
-    // #show-menu:checked ~ .menu .list .list__item
-    //     padding: .7rem
-    //     align-items: center

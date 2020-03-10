@@ -18,6 +18,19 @@
         flex-direction: column
         background: url('/img/main1.jpg')
         background-size: 130%
+        @media only screen and (min-width: 1024px)
+            background: url('/img/main1.jpg') no-repeat center center fixed
+            -webkit-background-size: cover
+            -moz-background-size: cover
+            -o-background-size: cover
+            background-size: cover
+            background-size: 100%
+            height: 32%
+        h2
+            @media only screen and (min-width: 1024px)
+                position: absolute
+                top: -11vh
+                font-size: 200%
 
     &__news
         position: absolute
@@ -26,6 +39,8 @@
         height: 25%
         border-top: solid 1px
         border-bottom: solid 1px
+        @media only screen and (min-width: 1024px)
+            top: 43vh
 
     &__speech
         position: absolute
@@ -33,3 +48,5 @@
         width: 100%
         height: 17%
         background-color: #e2dfdf
+        @media only screen and (min-width: 1024px)
+                top: 70vh

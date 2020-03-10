@@ -17,19 +17,29 @@
         flex-wrap: wrap
         justify-content: space-around
         align-items: center
+        @media only screen and (min-width: 1024px)
+            width: 37%
+            left: 30%
+            min-height: 68%
         &__title
             display: flex
             justify-content: center
             width: 100%
             font-size: 130%
-            padding-bottom: 2%
+            margin-bottom: -13%
             font-family: 'Staatliches'
             color: black
-
+            @media only screen and (min-width: 1024px)
+                padding-bottom: 0
+                margin-bottom: -8%
         & label, button
             margin: 6%
         & label
             width: 100%
+            display: flex
+            justify-content: space-between
+            @media only screen and (min-width: 1024px)
+                width: 115%
 
         .form
             display: flex

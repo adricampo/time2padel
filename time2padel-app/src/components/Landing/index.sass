@@ -1,12 +1,32 @@
+@keyframes images
+    0%
+        right: 0%
+    50%
+        right: 100%
+        transform: scaleX(-1)
+    100%
+        right: 0%
+
+@keyframes MoveUpDown
+    0%
+        bottom: 0%
+    50%
+        bottom: 100%
+        transform: translateY(10px)
+    100%
+        bottom: 0%
+
 .landing
     display: flex
     justify-content: center
     width: 100%
     height: 100%
-    // background-color: #eee29e
     font-family: 'Staatliches'
-    background: url(http://vidaytenis.com/wp-content/uploads/2019/02/amarillas-no-siempre-imprescindibles-en-cada-juego.jpg)
-
+    background: url(http://vidaytenis.com/wp-content/uploads/2019/02/amarillas-no-siempre-imprescindibles-en-cada-juego.jpg) no-repeat center center fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
     .container
         position: fixed
         top: 35%
@@ -17,12 +37,23 @@
         flex-direction: column
         justify-content: space-evenly
         align-items: center
-        border: 2px solid black
+        border: 3px solid black
         border-radius: 2rem
         background-color: #ece9e9
         padding: 1rem
         cursor: pointer
-        
+        @media only screen and (min-width: 1024px)
+            top: 28%
+            left: 34%
+            height: 43%
+            width: 27%
+        &:hover
+            cursor: pointer
+            transform: scale(1.1) perspective(1px)
+            animation-name: MoveUpDown 
+            animation-duration: 1s 
+            animation-timing-function: linear
+            animation-iteration-count: infinite
         &__title
             font-size: 200%
         .images
@@ -31,11 +62,24 @@
             flex-direction: row
             justify-content: center
             align-items: center
+            animation-name: images
+            animation-duration: 5s
+            animation-timing-function: ease
+            animation-iteration-count: infinite
+            width: 80%
+            @media only screen and (min-width: 1024px)
+                margin-left: 3%
             &__img1
                 max-width: 35vw
                 width: 70%
                 margin-left: -20%
+                @media only screen and (min-width: 1024px)
+                    max-width: 12vw
+                    max-height: 22vh
             &__img2
                 max-width: 7vw
                 margin-bottom: -2rem
-                width: 30%        
+                width: 30%
+                @media only screen and (min-width: 1024px)
+                    max-width: 2vw
+                    max-height: 5vh

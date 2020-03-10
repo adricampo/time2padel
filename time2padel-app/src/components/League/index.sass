@@ -1,24 +1,40 @@
 .league
     .container
-            width: 102%
+            width: 100%
             height: 7rem
-            border: solid 1px
+            border-top: solid 1px
+            border-bottom: solid 1px
             margin-bottom: 3%
+            @media only screen and (min-width: 1024px)
+                display: flex
+                flex-direction: row                
             &__img
-                width: 15%
+                width: 18%
                 max-width: 15vw
                 max-height: 12vh
+                @media only screen and (min-width: 1024px)
+                    margin-left: -10%
+                    max-width: 10vw
+                    max-height: 15vh
+                    
             &__item
                 display: flex
                 flex-direction: row
                 justify-content: flex-start
                 align-content: center
+                margin-left: 1%
+                @media only screen and (min-width: 1024px)
+                    width: 100%
+                    margin-left: 8%
             p
                 display: flex
                 flex-direction: column
                 justify-content: center
                 margin-left: 3%
                 font-family: 'Staatliches'
+                @media only screen and (min-width: 1024px)
+                    margin-left: 10%
+             
             .buttons
                 display: flex
                 flex-direction: row
@@ -26,6 +42,11 @@
                 justify-content: space-evenly
                 width: 100%
                 margin-top: 1.5%
+                @media only screen and (min-width: 1024px)
+                   margin-top: 0
+                   margin-right: 10%
+                   align-items: center
+                   height: 100%
                 &__leaguedetail
                     width: 7rem
                     height: 2rem

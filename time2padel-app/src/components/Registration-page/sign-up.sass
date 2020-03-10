@@ -1,6 +1,5 @@
 .sign-up
     width: 100vw
-    height: 60%
     display: flex
     flex-direction: column
     flex-wrap: wrap
@@ -19,12 +18,15 @@
         flex-direction: column
         color: black
         align-items: center
-
+        width: 100%
+        justify-content: center
         & label
             margin: 2%
-        & label
-            width: 100%
-
+            width: 80%
+            display: flex
+            justify-content: space-between
+            @media only screen and (min-width: 1024px)
+                width: 60%
     .button
         display: flex
         flex-direction: row
