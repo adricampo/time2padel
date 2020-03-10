@@ -1,44 +1,44 @@
-import authenticateUser from './authenticate-user'
-import registerUser from './register-user'
-import retrieveUser from './retrieve-user'
-import modifyUser from './modify-user'
-import deleteUser from './delete-user'
-import createLeague from './create-league'
-import deleteLeague from './delete-league'
-import retrieveLeagues from './retrieve-leagues'
-import createTeam from './create-team'
-import updateTeam from './update-team'
-import deleteTeam from './delete-team'
-import retrieveTeam from './retrieve-team'
-import retrieveTeamByLeague from './retrieve-teambyleague'
-import addTeamToLeague from './add-teamtoleague'
-import retrieveLeaguebyTeam from './retrieve-leaguebyteam'
-import retrieveLeague from './retrieve-league'
-import retrieveTeamByLeague from './retrieve-teambyleague'
-import updateLeagueUsers from './update-leagueusers'
-import retrieveUserTeams from './retrieve-userteams'
-import listTeams from './list-teams'
+const authenticateUser = require('./authenticate-user')
+const registerUser = require('./register-user')
+const retrieveUser = require('./retrieve-user')
+const modifyUser = require('./modify-user')
+// const deleteUser = require('./delete-user')
+const createLeague = require('./create-league')
+// const deleteLeague = require('./delete-league')
+const retrieveLeagues = require('./retrieve-leagues')
+const createTeam = require('./create-team')
+const updateTeam = require('./update-team')
+const deleteTeam = require('./delete-team')
+// const retrieveTeam = require('./retrieve-team')
+// const retrieveTeamByLeague = require('./retrieve-teambyleague')
+const addTeamToLeague = require('./add-teamtoleague')
+// const retrieveLeaguebyTeam = require('./retrieve-leaguebyteam')
+const retrieveLeague = require('./retrieve-league')
+// const retrieveTeamByLeague = require('./retrieve-teambyleague')
+// const updateLeagueUsers = require('./update-leagueusers')
+const retrieveUserTeams = require('./retrieve-userteams')
+// const listTeams = require('./list-teams')
 
 
-export default {
+module.exports =  {
     authenticateUser,
     registerUser,
     retrieveUser,
     modifyUser,
-    deleteUser, 
+    //deleteUser, 
     createLeague,
-    deleteLeague,
+    //deleteLeague,
     retrieveLeagues,
     createTeam,
     updateTeam,
     deleteTeam,
-    retrieveTeam,
-    retrieveTeamByLeague,
+    //retrieveTeam,
+    //retrieveTeamByLeague,
     addTeamToLeague,
-    retrieveLeaguebyTeam,
+    //retrieveLeaguebyTeam,
     retrieveLeague,
-    retrieveTeamByLeague,
-    updateLeagueUsers,
+    //retrieveTeamByLeague,
+    //updateLeagueUsers,
     retrieveUserTeams,
-    listTeams
+    //listTeams
 }

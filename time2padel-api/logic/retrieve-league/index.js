@@ -7,7 +7,7 @@ const { models: { League, Team } } = require('time2padel-data')
  * @param {string} leagueId, league id 
  */
 
-export default function (leagueId) { 
+module.exports = function (leagueId) { 
     validate.string(leagueId)
     validate.string.notVoid('leagueId', leagueId)
 

@@ -12,7 +12,7 @@ const { models: { League } } = require('time2padel-data')
  * 
  */
 
-export default function (level, gender, date, time) {
+module.exports = function (level, gender, date, time) {
     validate.string(level)
     validate.string.notVoid('level', level)
 

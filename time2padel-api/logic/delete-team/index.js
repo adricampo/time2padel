@@ -7,7 +7,7 @@ const { ObjectId, models: { Team } } = require('time2padel-data')
  * 
  */
 
-export default function (teamId) {
+module.exports = function (teamId) {
     validate.string(teamId, 'teamId')
     if (!ObjectId.isValid(teamId)) throw new ContentError(`${teamId} is not a valid id`)
     
