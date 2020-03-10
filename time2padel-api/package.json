@@ -27,7 +27,10 @@
     "time2padel-util": "file:../time2padel-util"
   },
   "nyc": {
-    "exclude": ["helpers/**/round-robin.js","logic/update-leagueusers/*.js"]
+    "exclude": [
+      "helpers/**/round-robin.js",
+      "logic/update-leagueusers/*.js"
+    ]
   },
   "devDependencies": {
     "chai": "^4.2.0",
