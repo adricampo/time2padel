@@ -13,7 +13,7 @@ const API_URL = process.env.REACT_APP_API_URL
  * @param {string} gender, user gender 
  */
 
-module.exports = function (name, surname, username, gender, email, password) {
+export default function (name, surname, username, gender, email, password) {
     validate.string(name)
     validate.string.notVoid('name', name)
     validate.string(surname)

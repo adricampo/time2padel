@@ -8,7 +8,7 @@ const API_URL = process.env.REACT_APP_API_URL
  * @param {string} leagueId, league id 
  */
 
-module.exports = function (leagueId) { 
+export default function (leagueId) { 
     validate.string(leagueId)
     validate.string.notVoid('leagueId', leagueId)
 
