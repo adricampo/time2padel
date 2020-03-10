@@ -8,7 +8,7 @@ const API_URL = process.env.REACT_APP_API_URL
  * @param {string} is, user id
  */
 
-module.exports = function (token) {
+export default function (token) {
     validate.string(token)
     validate.string.notVoid('token', token)
 
