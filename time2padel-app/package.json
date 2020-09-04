@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "jsonwebtoken": "^8.5.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "time2padel-data": "file:../time2padel-data"
   },
   "scripts": {
