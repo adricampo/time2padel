@@ -11,7 +11,7 @@
     "time2padel-util": "file:../time2padel-util"
   },
   "devDependencies": {
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "node-sass": "^4.13.0",
     "time2padel-data": "file:../time2padel-data"
   },
